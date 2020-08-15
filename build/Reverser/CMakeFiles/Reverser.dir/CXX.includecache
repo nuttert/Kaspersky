@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Models/Token.hpp
+string
+-
+
+/Test/Reverser/Reverser.cpp
+Reverser.hpp
+/Test/Reverser/Reverser.hpp
+regex
+-
+
+/Test/Reverser/Reverser.hpp
+string
+-
+Models/Token.hpp
+/Test/Reverser/Models/Token.hpp
+

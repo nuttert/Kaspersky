@@ -1,0 +1,2 @@
+/usr/bin/ar qc libReverser.a  CMakeFiles/Reverser.dir/Reverser.cpp.o
+/usr/bin/ranlib libReverser.a

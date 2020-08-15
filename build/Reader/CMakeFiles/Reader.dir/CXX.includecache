@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Models/Token.hpp
+string
+-
+
+../Reader/Reader.hpp
+string
+-
+Models/Token.hpp
+../Reader/Models/Token.hpp
+
+/Test/Reader/impl/Reader.cpp
+Reader.hpp
+/Test/Reader/impl/Reader.hpp
+fstream
+-
+iostream
+-
+regex
+-
+stdio.h
+-
+
+/Test/Reader/impl/Reader.hpp
+string
+-
+Models/Token.hpp
+/Test/Reader/impl/Models/Token.hpp
+Reader/Reader.hpp
+/Test/Reader/impl/Reader/Reader.hpp
+

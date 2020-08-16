@@ -10,15 +10,37 @@
 string
 -
 
-/Test/Reverser/Reverser.cpp
-Reverser.hpp
-/Test/Reverser/Reverser.hpp
-regex
--
+../Reverser/Contract/ReverserContract.hpp
+Models/Token.hpp
+../Reverser/Contract/Models/Token.hpp
 
-/Test/Reverser/Reverser.hpp
+../Reverser/Reverser.hpp
 string
 -
 Models/Token.hpp
-/Test/Reverser/Models/Token.hpp
+../Reverser/Models/Token.hpp
+
+/Test/Reverser/Contract/ReverserContract.cpp
+ReverserContract.hpp
+/Test/Reverser/Contract/ReverserContract.hpp
+
+/Test/Reverser/Contract/ReverserContract.hpp
+Models/Token.hpp
+/Test/Reverser/Contract/Models/Token.hpp
+
+/Test/Reverser/impl/Reverser.cpp
+Reverser.hpp
+/Test/Reverser/impl/Reverser.hpp
+Reverser/Contract/ReverserContract.hpp
+/Test/Reverser/impl/Reverser/Contract/ReverserContract.hpp
+regex
+-
+
+/Test/Reverser/impl/Reverser.hpp
+string
+-
+Reverser/Reverser.hpp
+/Test/Reverser/impl/Reverser/Reverser.hpp
+Models/Token.hpp
+/Test/Reverser/impl/Models/Token.hpp
 

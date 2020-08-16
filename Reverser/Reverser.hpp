@@ -4,7 +4,7 @@
 
 namespace reverser{
     class Reverser{
-        public:
-        std::string ReverseWord(const Token& token);
+    public:
+        virtual Token ReverseWord(const Token& token) = 0;
     };
 }

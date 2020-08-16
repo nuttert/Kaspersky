@@ -231,6 +231,12 @@ Interrupter_BINARY_DIR:STATIC=/Test/build/Interrupter
 Interrupter_SOURCE_DIR:STATIC=/Test/Interrupter
 
 //Value Computed by CMake
+Models_BINARY_DIR:STATIC=/Test/build/Models
+
+//Value Computed by CMake
+Models_SOURCE_DIR:STATIC=/Test/Models
+
+//Value Computed by CMake
 Reader_BINARY_DIR:STATIC=/Test/build/Reader
 
 //Value Computed by CMake
@@ -259,6 +265,12 @@ TokenProcessor_BINARY_DIR:STATIC=/Test/build/TokenProcessor
 
 //Value Computed by CMake
 TokenProcessor_SOURCE_DIR:STATIC=/Test/TokenProcessor
+
+//Value Computed by CMake
+Utilities_BINARY_DIR:STATIC=/Test/build/Utilities
+
+//Value Computed by CMake
+Utilities_SOURCE_DIR:STATIC=/Test/Utilities
 
 //Value Computed by CMake
 Writer_BINARY_DIR:STATIC=/Test/build/Writer
@@ -379,7 +391,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

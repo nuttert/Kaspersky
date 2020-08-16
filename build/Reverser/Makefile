@@ -125,32 +125,59 @@ Reverser/fast:
 	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/build
 .PHONY : Reverser/fast
 
-Reverser.o: Reverser.cpp.o
+Contract/ReverserContract.o: Contract/ReverserContract.cpp.o
 
-.PHONY : Reverser.o
+.PHONY : Contract/ReverserContract.o
 
 # target to build an object file
-Reverser.cpp.o:
-	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.o
-.PHONY : Reverser.cpp.o
+Contract/ReverserContract.cpp.o:
+	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o
+.PHONY : Contract/ReverserContract.cpp.o
 
-Reverser.i: Reverser.cpp.i
+Contract/ReverserContract.i: Contract/ReverserContract.cpp.i
 
-.PHONY : Reverser.i
+.PHONY : Contract/ReverserContract.i
 
 # target to preprocess a source file
-Reverser.cpp.i:
-	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.i
-.PHONY : Reverser.cpp.i
+Contract/ReverserContract.cpp.i:
+	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.i
+.PHONY : Contract/ReverserContract.cpp.i
 
-Reverser.s: Reverser.cpp.s
+Contract/ReverserContract.s: Contract/ReverserContract.cpp.s
 
-.PHONY : Reverser.s
+.PHONY : Contract/ReverserContract.s
 
 # target to generate assembly for a file
-Reverser.cpp.s:
-	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.s
-.PHONY : Reverser.cpp.s
+Contract/ReverserContract.cpp.s:
+	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.s
+.PHONY : Contract/ReverserContract.cpp.s
+
+impl/Reverser.o: impl/Reverser.cpp.o
+
+.PHONY : impl/Reverser.o
+
+# target to build an object file
+impl/Reverser.cpp.o:
+	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.o
+.PHONY : impl/Reverser.cpp.o
+
+impl/Reverser.i: impl/Reverser.cpp.i
+
+.PHONY : impl/Reverser.i
+
+# target to preprocess a source file
+impl/Reverser.cpp.i:
+	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.i
+.PHONY : impl/Reverser.cpp.i
+
+impl/Reverser.s: impl/Reverser.cpp.s
+
+.PHONY : impl/Reverser.s
+
+# target to generate assembly for a file
+impl/Reverser.cpp.s:
+	cd /Test/build && $(MAKE) -f Reverser/CMakeFiles/Reverser.dir/build.make Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.s
+.PHONY : impl/Reverser.cpp.s
 
 # Help Target
 help:
@@ -161,9 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Reverser"
-	@echo "... Reverser.o"
-	@echo "... Reverser.i"
-	@echo "... Reverser.s"
+	@echo "... Contract/ReverserContract.o"
+	@echo "... Contract/ReverserContract.i"
+	@echo "... Contract/ReverserContract.s"
+	@echo "... impl/Reverser.o"
+	@echo "... impl/Reverser.i"
+	@echo "... impl/Reverser.s"
 .PHONY : help
 
 

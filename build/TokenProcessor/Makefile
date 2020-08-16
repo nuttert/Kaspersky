@@ -125,6 +125,33 @@ TokenProcessor/fast:
 	cd /Test/build && $(MAKE) -f TokenProcessor/CMakeFiles/TokenProcessor.dir/build.make TokenProcessor/CMakeFiles/TokenProcessor.dir/build
 .PHONY : TokenProcessor/fast
 
+Contract/TokenProcessorContract.o: Contract/TokenProcessorContract.cpp.o
+
+.PHONY : Contract/TokenProcessorContract.o
+
+# target to build an object file
+Contract/TokenProcessorContract.cpp.o:
+	cd /Test/build && $(MAKE) -f TokenProcessor/CMakeFiles/TokenProcessor.dir/build.make TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o
+.PHONY : Contract/TokenProcessorContract.cpp.o
+
+Contract/TokenProcessorContract.i: Contract/TokenProcessorContract.cpp.i
+
+.PHONY : Contract/TokenProcessorContract.i
+
+# target to preprocess a source file
+Contract/TokenProcessorContract.cpp.i:
+	cd /Test/build && $(MAKE) -f TokenProcessor/CMakeFiles/TokenProcessor.dir/build.make TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.i
+.PHONY : Contract/TokenProcessorContract.cpp.i
+
+Contract/TokenProcessorContract.s: Contract/TokenProcessorContract.cpp.s
+
+.PHONY : Contract/TokenProcessorContract.s
+
+# target to generate assembly for a file
+Contract/TokenProcessorContract.cpp.s:
+	cd /Test/build && $(MAKE) -f TokenProcessor/CMakeFiles/TokenProcessor.dir/build.make TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.s
+.PHONY : Contract/TokenProcessorContract.cpp.s
+
 TokenProcessor.o: TokenProcessor.cpp.o
 
 .PHONY : TokenProcessor.o
@@ -188,6 +215,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TokenProcessor"
+	@echo "... Contract/TokenProcessorContract.o"
+	@echo "... Contract/TokenProcessorContract.i"
+	@echo "... Contract/TokenProcessorContract.s"
 	@echo "... TokenProcessor.o"
 	@echo "... TokenProcessor.i"
 	@echo "... TokenProcessor.s"

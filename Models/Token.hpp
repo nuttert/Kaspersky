@@ -4,13 +4,30 @@
 
 namespace reverser{
     enum class ETokenType{
-        kWord,
+        kLetter,
         kSymbol,
-        kEOF
+        kEOF,
+        kNone
     };
 
-    struct Token{
-        ETokenType type;
+    class ReverserImpl;
+
+    class Token{
+    public:
+        bool AddToBuffer(char symbol);
+
+        const std::string& GetBuffer() const;
+              std::string& GetBuffer();
+        ETokenType GetType() const;
+    private:
+        bool NoneHandler(char symbol);
+        bool SymbolHandler(char symbol);
+        bool LetterHandler(char symbol);
+        bool EOFHandler(char symbol);
+    private:
+        ETokenType type = ETokenType::kNone;
         std::string buffer;
+
+        friend ReverserImpl;
     };
 }

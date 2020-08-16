@@ -19,6 +19,8 @@ Models/Token.hpp
 ../Reader/impl/Reader.hpp
 string
 -
+atomic
+-
 Models/Token.hpp
 ../Reader/impl/Models/Token.hpp
 Reader/Reader.hpp
@@ -30,6 +32,18 @@ string
 Models/Token.hpp
 ../Reverser/Models/Token.hpp
 
+../Reverser/impl/Reverser.hpp
+string
+-
+Reverser/Reverser.hpp
+../Reverser/impl/Reverser/Reverser.hpp
+Models/Token.hpp
+../Reverser/impl/Models/Token.hpp
+
+../TokenProcessor/Contract/TokenProcessorContract.hpp
+Models/Token.hpp
+../TokenProcessor/Contract/Models/Token.hpp
+
 ../TokenProcessor/TokenProcessor.hpp
 memory
 -
@@ -37,12 +51,18 @@ memory
 ../Writer/Writer.hpp
 string
 -
+Models/Token.hpp
+../Writer/Models/Token.hpp
 
 ../Writer/impl/Writer.hpp
 string
 -
 Writer/Writer.hpp
 ../Writer/impl/Writer/Writer.hpp
+mutex
+-
+condition_variable
+-
 
 /Test/TokenProcessor/impl/TokenProcessor.cpp
 future
@@ -51,10 +71,12 @@ iostream
 -
 TokenProcessor.hpp
 /Test/TokenProcessor/impl/TokenProcessor.hpp
+TokenProcessor/Contract/TokenProcessorContract.hpp
+/Test/TokenProcessor/impl/TokenProcessor/Contract/TokenProcessorContract.hpp
 Models/Token.hpp
 /Test/TokenProcessor/impl/Models/Token.hpp
-Reverser/Reverser.hpp
-/Test/TokenProcessor/impl/Reverser/Reverser.hpp
+Reverser/impl/Reverser.hpp
+/Test/TokenProcessor/impl/Reverser/impl/Reverser.hpp
 Writer/impl/Writer.hpp
 /Test/TokenProcessor/impl/Writer/impl/Writer.hpp
 Reader/impl/Reader.hpp

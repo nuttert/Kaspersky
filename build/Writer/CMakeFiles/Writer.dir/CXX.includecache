@@ -6,14 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../Models/Token.hpp
+string
+-
+
 ../Writer/Writer.hpp
 string
 -
+Models/Token.hpp
+../Writer/Models/Token.hpp
 
 /Test/Writer/impl/Writer.cpp
 Writer.hpp
 /Test/Writer/impl/Writer.hpp
 iostream
+-
+future
 -
 
 /Test/Writer/impl/Writer.hpp
@@ -21,4 +29,8 @@ string
 -
 Writer/Writer.hpp
 /Test/Writer/impl/Writer/Writer.hpp
+mutex
+-
+condition_variable
+-
 

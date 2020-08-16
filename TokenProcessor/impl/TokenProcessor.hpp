@@ -10,9 +10,11 @@ namespace reverser{
         TokenProcessorImpl();
         void Start() override;
         void Stop() override;
+        ~TokenProcessorImpl();
+    private:
+        void StopImpl();
     private:
         std::atomic<bool> isRun;
-        std::mutex mutex;
         std::future<void> runner;
     };
 }

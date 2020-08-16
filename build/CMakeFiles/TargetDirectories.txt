@@ -19,3 +19,9 @@
 /Test/build/Writer/CMakeFiles/rebuild_cache.dir
 /Test/build/Writer/CMakeFiles/edit_cache.dir
 /Test/build/Writer/CMakeFiles/Writer.dir
+/Test/build/Models/CMakeFiles/rebuild_cache.dir
+/Test/build/Models/CMakeFiles/edit_cache.dir
+/Test/build/Models/CMakeFiles/Models.dir
+/Test/build/Utilities/CMakeFiles/rebuild_cache.dir
+/Test/build/Utilities/CMakeFiles/edit_cache.dir
+/Test/build/Utilities/CMakeFiles/Utilities.dir

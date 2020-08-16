@@ -45,6 +45,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Test/build/Runner/cmake_install.cmake")
   include("/Test/build/TokenProcessor/cmake_install.cmake")
   include("/Test/build/Writer/cmake_install.cmake")
+  include("/Test/build/Models/cmake_install.cmake")
+  include("/Test/build/Utilities/cmake_install.cmake")
 
 endif()
 

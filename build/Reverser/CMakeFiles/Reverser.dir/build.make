@@ -57,30 +57,45 @@ include Reverser/CMakeFiles/Reverser.dir/progress.make
 # Include the compile flags for this target's objects.
 include Reverser/CMakeFiles/Reverser.dir/flags.make
 
-Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.o: Reverser/CMakeFiles/Reverser.dir/flags.make
-Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.o: ../Reverser/Reverser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.o"
-	cd /Test/build/Reverser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reverser.dir/Reverser.cpp.o -c /Test/Reverser/Reverser.cpp
+Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o: Reverser/CMakeFiles/Reverser.dir/flags.make
+Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o: ../Reverser/Contract/ReverserContract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o"
+	cd /Test/build/Reverser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o -c /Test/Reverser/Contract/ReverserContract.cpp
 
-Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reverser.dir/Reverser.cpp.i"
-	cd /Test/build/Reverser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Reverser/Reverser.cpp > CMakeFiles/Reverser.dir/Reverser.cpp.i
+Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.i"
+	cd /Test/build/Reverser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Reverser/Contract/ReverserContract.cpp > CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.i
 
-Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reverser.dir/Reverser.cpp.s"
-	cd /Test/build/Reverser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Reverser/Reverser.cpp -o CMakeFiles/Reverser.dir/Reverser.cpp.s
+Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.s"
+	cd /Test/build/Reverser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Reverser/Contract/ReverserContract.cpp -o CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.s
+
+Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.o: Reverser/CMakeFiles/Reverser.dir/flags.make
+Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.o: ../Reverser/impl/Reverser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.o"
+	cd /Test/build/Reverser && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reverser.dir/impl/Reverser.cpp.o -c /Test/Reverser/impl/Reverser.cpp
+
+Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reverser.dir/impl/Reverser.cpp.i"
+	cd /Test/build/Reverser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Reverser/impl/Reverser.cpp > CMakeFiles/Reverser.dir/impl/Reverser.cpp.i
+
+Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reverser.dir/impl/Reverser.cpp.s"
+	cd /Test/build/Reverser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Reverser/impl/Reverser.cpp -o CMakeFiles/Reverser.dir/impl/Reverser.cpp.s
 
 # Object files for target Reverser
 Reverser_OBJECTS = \
-"CMakeFiles/Reverser.dir/Reverser.cpp.o"
+"CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o" \
+"CMakeFiles/Reverser.dir/impl/Reverser.cpp.o"
 
 # External object files for target Reverser
 Reverser_EXTERNAL_OBJECTS =
 
-Reverser/libReverser.a: Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.o
+Reverser/libReverser.a: Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o
+Reverser/libReverser.a: Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.o
 Reverser/libReverser.a: Reverser/CMakeFiles/Reverser.dir/build.make
 Reverser/libReverser.a: Reverser/CMakeFiles/Reverser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libReverser.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libReverser.a"
 	cd /Test/build/Reverser && $(CMAKE_COMMAND) -P CMakeFiles/Reverser.dir/cmake_clean_target.cmake
 	cd /Test/build/Reverser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Reverser.dir/link.txt --verbose=$(VERBOSE)
 

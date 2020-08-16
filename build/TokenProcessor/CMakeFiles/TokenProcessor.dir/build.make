@@ -57,9 +57,22 @@ include TokenProcessor/CMakeFiles/TokenProcessor.dir/progress.make
 # Include the compile flags for this target's objects.
 include TokenProcessor/CMakeFiles/TokenProcessor.dir/flags.make
 
+TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o: TokenProcessor/CMakeFiles/TokenProcessor.dir/flags.make
+TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o: ../TokenProcessor/Contract/TokenProcessorContract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o"
+	cd /Test/build/TokenProcessor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o -c /Test/TokenProcessor/Contract/TokenProcessorContract.cpp
+
+TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.i"
+	cd /Test/build/TokenProcessor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/TokenProcessor/Contract/TokenProcessorContract.cpp > CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.i
+
+TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.s"
+	cd /Test/build/TokenProcessor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/TokenProcessor/Contract/TokenProcessorContract.cpp -o CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.s
+
 TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o: TokenProcessor/CMakeFiles/TokenProcessor.dir/flags.make
 TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o: ../TokenProcessor/TokenProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o"
 	cd /Test/build/TokenProcessor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o -c /Test/TokenProcessor/TokenProcessor.cpp
 
 TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.i: cmake_force
@@ -72,7 +85,7 @@ TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.s: cmake_force
 
 TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o: TokenProcessor/CMakeFiles/TokenProcessor.dir/flags.make
 TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o: ../TokenProcessor/impl/TokenProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o"
 	cd /Test/build/TokenProcessor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o -c /Test/TokenProcessor/impl/TokenProcessor.cpp
 
 TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.i: cmake_force
@@ -85,17 +98,19 @@ TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.s: cmake_fo
 
 # Object files for target TokenProcessor
 TokenProcessor_OBJECTS = \
+"CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o" \
 "CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o" \
 "CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o"
 
 # External object files for target TokenProcessor
 TokenProcessor_EXTERNAL_OBJECTS =
 
+TokenProcessor/libTokenProcessor.a: TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o
 TokenProcessor/libTokenProcessor.a: TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o
 TokenProcessor/libTokenProcessor.a: TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o
 TokenProcessor/libTokenProcessor.a: TokenProcessor/CMakeFiles/TokenProcessor.dir/build.make
 TokenProcessor/libTokenProcessor.a: TokenProcessor/CMakeFiles/TokenProcessor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libTokenProcessor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libTokenProcessor.a"
 	cd /Test/build/TokenProcessor && $(CMAKE_COMMAND) -P CMakeFiles/TokenProcessor.dir/cmake_clean_target.cmake
 	cd /Test/build/TokenProcessor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TokenProcessor.dir/link.txt --verbose=$(VERBOSE)
 

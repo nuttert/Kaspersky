@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Test/Reverser/Reverser.cpp" "/Test/build/Reverser/CMakeFiles/Reverser.dir/Reverser.cpp.o"
+  "/Test/Reverser/Contract/ReverserContract.cpp" "/Test/build/Reverser/CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o"
+  "/Test/Reverser/impl/Reverser.cpp" "/Test/build/Reverser/CMakeFiles/Reverser.dir/impl/Reverser.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

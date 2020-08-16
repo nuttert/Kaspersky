@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Reverser.dir/Reverser.cpp.o"
+  "CMakeFiles/Reverser.dir/Contract/ReverserContract.cpp.o"
+  "CMakeFiles/Reverser.dir/impl/Reverser.cpp.o"
   "libReverser.a"
   "libReverser.pdb"
 )

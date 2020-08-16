@@ -19,7 +19,18 @@ add_subdirectory(Reverser)
 add_subdirectory(Runner)
 add_subdirectory(TokenProcessor)
 add_subdirectory(Writer)
+add_subdirectory(Models)
+add_subdirectory(Utilities)
 
-target_link_libraries(${PROJECT_NAME} Threads::Threads Runner TokenProcessor Interrupter Reader Reverser Writer)
+target_link_libraries(${PROJECT_NAME} 
+    Threads::Threads 
+    Runner 
+    TokenProcessor 
+    Interrupter 
+    Reader 
+    Reverser 
+    Writer 
+    Models 
+    Utilities)
 
 

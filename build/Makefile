@@ -201,6 +201,32 @@ Writer/fast:
 	$(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/build
 .PHONY : Writer/fast
 
+#=============================================================================
+# Target rules for targets named Models
+
+# Build rule for target.
+Models: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Models
+.PHONY : Models
+
+# fast build rule for target.
+Models/fast:
+	$(MAKE) -f Models/CMakeFiles/Models.dir/build.make Models/CMakeFiles/Models.dir/build
+.PHONY : Models/fast
+
+#=============================================================================
+# Target rules for targets named Utilities
+
+# Build rule for target.
+Utilities: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Utilities
+.PHONY : Utilities
+
+# fast build rule for target.
+Utilities/fast:
+	$(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/build
+.PHONY : Utilities/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -243,6 +269,8 @@ help:
 	@echo "... Runner"
 	@echo "... TokenProcessor"
 	@echo "... Writer"
+	@echo "... Models"
+	@echo "... Utilities"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

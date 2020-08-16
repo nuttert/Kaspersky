@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Utilities/Utilities.hpp
+
+/Test/Models/Token.cpp
+Token.hpp
+/Test/Models/Token.hpp
+Utilities/Utilities.hpp
+/Test/Models/Utilities/Utilities.hpp
+stdexcept
+-
+
+/Test/Models/Token.hpp
+string
+-
+

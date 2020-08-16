@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Test/TokenProcessor/Contract/TokenProcessorContract.cpp" "/Test/build/TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o"
   "/Test/TokenProcessor/TokenProcessor.cpp" "/Test/build/TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o"
   "/Test/TokenProcessor/impl/TokenProcessor.cpp" "/Test/build/TokenProcessor/CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o"
   )

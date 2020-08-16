@@ -3,45 +3,37 @@
 #include <iostream>
 #include <regex>
 #include <stdio.h>
-
+#include <sys/select.h>
 
 namespace reverser{
 
-    void ReaderImpl::Start(){
+    ReaderImpl::ReaderImpl():isRun(false){}
 
+    void ReaderImpl::Start(){
+        isRun = true;
     }
     void ReaderImpl::Stop(){
-        
+        isRun = false;
     }
 
-    Token ReaderImpl::ReadToken(){
-       static std::regex regex("[a-zA-Zа-яА-Я]"); 
-       char new_symbol = getchar();
-       char temp = static_cast<char>(new_symbol);
-       auto str_symbol = std::string(1,temp);
+    Token ReaderImpl::ReadToken() const{
+       static const auto STDIN = 0;
+       int new_symbol;
+       int descriptorIsActive;
 
        Token token;
-     
-        if(std::regex_match(str_symbol, regex))
-            token.type = ETokenType::kWord;
-        else token.type = ETokenType::kSymbol;
-    
-       while(new_symbol != EOF){
-           temp = static_cast<char>(new_symbol);
-           str_symbol = std::string(1,temp);
+       fd_set descriptors;
+       FD_SET(STDIN, &descriptors);
 
-           bool currentIsAlpha = std::regex_match(str_symbol, regex);
+       while(isRun  &&
+             (descriptorIsActive = select(1, &descriptors, NULL, NULL, NULL)) &&
+             token.AddToBuffer(new_symbol = getchar()));
+       if(descriptorIsActive < 0) throw std::runtime_error("File descriptor error!");
 
-           if(currentIsAlpha == (token.type == ETokenType::kWord))
-               token.buffer += new_symbol;
-            else{
-                ungetc(new_symbol, stdin);
-                break;
-            }
-           new_symbol = getchar();
-       }
-       if(new_symbol == EOF)
-            token.type = ETokenType::kEOF;
-        return token;
+       ungetc(new_symbol, stdin);
+       return token;
+    }
+    ReaderImpl::~ReaderImpl(){
+        Stop();
     }
 }

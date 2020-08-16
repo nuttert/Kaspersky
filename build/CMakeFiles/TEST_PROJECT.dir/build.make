@@ -85,6 +85,8 @@ TEST_PROJECT: Interrupter/libInterrupter.a
 TEST_PROJECT: Reader/libReader.a
 TEST_PROJECT: Reverser/libReverser.a
 TEST_PROJECT: Writer/libWriter.a
+TEST_PROJECT: Models/libModels.a
+TEST_PROJECT: Utilities/libUtilities.a
 TEST_PROJECT: CMakeFiles/TEST_PROJECT.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TEST_PROJECT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TEST_PROJECT.dir/link.txt --verbose=$(VERBOSE)

@@ -19,7 +19,6 @@ namespace reverser
                 SIG_DFL(signal);
         }
     } // namespace
-    
 
     InterrupterImpl::InterrupterImpl(const Delegator &delegator) : delegator(delegator)
     {

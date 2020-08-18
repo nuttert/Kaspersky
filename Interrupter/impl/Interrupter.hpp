@@ -22,6 +22,6 @@ namespace reverser
 
     private:
         mutable std::atomic<bool> isRun;
-        const Delegator& delegator;
+        Delegator delegator;
     };
 } // namespace reverser

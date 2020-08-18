@@ -2,13 +2,11 @@
 
 #include <stdio.h>
 #include <ctype.h>
-
+#include <iostream>
 namespace utilities
 {
     bool isLetter(int symbol)
     {
-        return isalpha(symbol) ||
-               (symbol >= 1040 && symbol <= 1103) ||
-               symbol == 1025;
+        return isalpha(symbol);
     }
 } // namespace utilities

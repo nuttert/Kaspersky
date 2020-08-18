@@ -20,7 +20,7 @@ namespace reverser
         Token(const char symbol);
         Token()=default;
 
-        bool AddToBuffer(char symbol);
+        bool AddToBuffer(int symbol);
         void SetBuffer(const std::string &buffer);
 
         const std::string &GetBuffer() const;
@@ -29,10 +29,10 @@ namespace reverser
         bool operator==(const Token& rhs) const;
 
     private:
-        bool NoneHandler(char symbol);
-        bool SymbolHandler(char symbol);
-        bool LetterHandler(char symbol);
-        bool EOFHandler(char symbol);
+        bool NoneHandler(int symbol);
+        bool SymbolHandler(int symbol);
+        bool LetterHandler(int symbol);
+        bool EOFHandler(int symbol);
 
     private:
         ETokenType type = ETokenType::kNone;

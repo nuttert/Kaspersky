@@ -26,7 +26,7 @@ namespace{
     {
     using Delegator = std::function<void()>;
     public:
-        Tester() : delegator([]{}), ::testing::Test()
+        Tester(): ::testing::Test()
         {
             interrupter_mock = std::make_shared<InterrupterMock>();
             reader_mock = std::make_shared<ReaderMock>();
@@ -37,13 +37,6 @@ namespace{
                 writer_mock,
                 reverser_mock
             );
-        }
-
-        std::function<void(RunnerImplWrapper*)> GetNativeDelegator(){
-            return &RunnerImplWrapper::SignalDelegator;
-        }
-        void SetDelegator(const Delegator& delegator){
-            this->delegator = delegator;
         }
         
         template<typename ...Args>
@@ -70,7 +63,6 @@ namespace{
         }
 
     protected:
-        Delegator delegator;
         std::shared_ptr<InterrupterMock> interrupter_mock;
         std::shared_ptr<ReaderMock> reader_mock;
         std::shared_ptr<WriterMock> writer_mock;

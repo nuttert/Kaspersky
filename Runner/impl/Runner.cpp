@@ -3,40 +3,46 @@
 #include "Interrupter/impl/Interrupter.hpp"
 #include <iostream>
 
-namespace reverser{
+namespace reverser
+{
 
-        RunnerImpl::RunnerImpl():
-        isRun(false),
-        Runner(std::make_shared<TokenProcessorImpl>(),
-               std::make_shared<InterrupterImpl>(
-                            std::bind(&RunnerImpl::SignalDelegator,this)))
-                {}
+        RunnerImpl::RunnerImpl() : isRun(false),
+                                   Runner(std::make_shared<TokenProcessorImpl>(),
+                                          std::make_shared<InterrupterImpl>(
+                                              std::bind(&RunnerImpl::SignalDelegator, this)))
+        {
+        }
 
-        void RunnerImpl::Run() const{
-               if(isRun) std::runtime_error("Runner already started!");
-               isRun = true;
-               auto result = std::async([this]{
-                   interrupter->Start();
-                   processor->Start();
-                   isReady = true;
-                   on_ready_handler();
-                   processor->Wait();
+        void RunnerImpl::Run() const
+        {
+                if (isRun)
+                        std::runtime_error("Runner already started!");
+                isRun = true;
+                auto result = std::async([this] {
+                        interrupter->Start();
+                        processor->Start();
+                        isReady = true;
+                        on_ready_handler();
+                        processor->Wait();
                 });
                 result.wait();
-  
+
                 isRun = false;
                 isReady = false;
                 processor->Stop();
                 interrupter->Stop();
         }
-        RunnerImpl::operator bool() const{
+        RunnerImpl::operator bool() const
+        {
                 return isReady;
         }
-        void RunnerImpl::OnReady(OnReadyHandler&& handler){
+        void RunnerImpl::OnReady(OnReadyHandler &&handler)
+        {
                 on_ready_handler = std::move(handler);
         }
-        void RunnerImpl::SignalDelegator(){
-            processor->Stop();
-            interrupter->Stop();
+        void RunnerImpl::SignalDelegator()
+        {
+                processor->Stop();
+                interrupter->Stop();
         }
-}
+} // namespace reverser

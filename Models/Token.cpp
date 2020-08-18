@@ -20,7 +20,7 @@ namespace reverser
                 throw exceptions::TokenException("Different token types!");
     }
 
-    bool Token::AddToBuffer(char symbol)
+    bool Token::AddToBuffer(int symbol)
     {
         switch (type)
         {
@@ -32,7 +32,7 @@ namespace reverser
         throw exceptions::TokenException("Undefined token type!");
     }
 
-    bool Token::NoneHandler(char symbol)
+    bool Token::NoneHandler(int symbol)
     {
         if (symbol == EOF)
         {
@@ -47,7 +47,7 @@ namespace reverser
         return true;
     }
 
-    bool Token::SymbolHandler(char symbol)
+    bool Token::SymbolHandler(int symbol)
     {
         if (symbol != EOF && !utilities::isLetter(symbol))
         {
@@ -59,7 +59,7 @@ namespace reverser
         return true;
     }
 
-    bool Token::LetterHandler(char symbol)
+    bool Token::LetterHandler(int symbol)
     {
         if (utilities::isLetter(symbol))
         {
@@ -71,7 +71,7 @@ namespace reverser
         return true;
     }
 
-    bool Token::EOFHandler(char symbol)
+    bool Token::EOFHandler(int symbol)
     {
         if (symbol == EOF)
         {

@@ -25,6 +25,7 @@ namespace reverser
 
         const std::string &GetBuffer() const;
         std::string &GetBuffer();
+        
         ETokenType GetType() const;
         bool operator==(const Token& rhs) const;
 

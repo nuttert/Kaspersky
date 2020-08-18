@@ -10,7 +10,6 @@ namespace reverser
     {
     public:
         using Delegator = std::function<void()>;
-
     public:
         InterrupterImpl(const Delegator &delegator);
         void Start() const override;

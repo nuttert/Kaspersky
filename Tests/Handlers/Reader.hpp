@@ -26,13 +26,13 @@ TEST_F(Tester, test_reader)
     EXPECT_CALL(*writer_mock, Stop()).
     Times(1);
     
-    testing::Sequence s;
+    testing::Sequence s_reverser;
 
     EXPECT_CALL(*reverser_mock, ReverseWord(testing::_)).
     Times(::testing::AnyNumber()).
     WillRepeatedly(::testing::Return(reverser::Token()));
 
-    SequenceCallInReverser(s,
+    SequenceCallInReverser(s_reverser,
     "Hello",
     "World",
     "!\n",

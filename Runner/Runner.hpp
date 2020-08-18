@@ -19,7 +19,6 @@ namespace reverser
         virtual void Run() const = 0;
         virtual operator bool() const = 0;
         virtual void OnReady(OnReadyHandler &&) = 0;
-
     protected:
         std::shared_ptr<TokenProcessor> processor;
         std::shared_ptr<Interrupter> interrupter;

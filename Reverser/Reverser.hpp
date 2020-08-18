@@ -7,6 +7,6 @@ namespace reverser
     class Reverser
     {
     public:
-        virtual Token ReverseWord(const Token &token) = 0;
+        virtual Token ReverseWord(const Token &token) const = 0;
     };
 } // namespace reverser

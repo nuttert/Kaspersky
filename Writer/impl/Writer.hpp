@@ -9,12 +9,12 @@ namespace reverser
     class WriterImpl : public Writer
     {
     public:
-        void Start() override;
-        void Stop() override;
+        void Start() const  override;
+        void Stop() const override;
         void WriteToken(const Token &token) const;
         ~WriterImpl();
 
     private:
-        std::atomic<bool> isRun;
+        mutable std::atomic<bool> isRun;
     };
 } // namespace reverser

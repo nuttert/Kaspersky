@@ -12,11 +12,11 @@ namespace reverser
 
     ReaderImpl::ReaderImpl() : isRun(false) {}
 
-    void ReaderImpl::Start()
+    void ReaderImpl::Start() const 
     {
         isRun = true;
     }
-    void ReaderImpl::Stop()
+    void ReaderImpl::Stop() const
     {
         isRun = false;
     }

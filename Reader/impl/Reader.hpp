@@ -11,12 +11,12 @@ namespace reverser
     {
     public:
         ReaderImpl();
-        void Start() override;
-        void Stop() override;
+        void Start() const override;
+        void Stop() const override;
         Token ReadToken() const override;
         ~ReaderImpl();
 
     private:
-        std::atomic<bool> isRun;
+        mutable std::atomic<bool> isRun;
     };
 } // namespace reverser

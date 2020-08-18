@@ -25,9 +25,9 @@ namespace reverser
             while (isRun)
             {
                 auto token = reader->ReadToken();
-                auto reversed_token = reverser->ReverseWord(token);
                 if (!TokenProcessorContract(token))
                     StopImpl();
+                auto reversed_token = reverser->ReverseWord(token);
                 writer->WriteToken(reversed_token);
             }
         });

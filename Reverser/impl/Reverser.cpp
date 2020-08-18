@@ -4,7 +4,7 @@
 
 
 namespace reverser{
-    Token ReverserImpl::ReverseWord(const Token& token){
+    Token ReverserImpl::ReverseWord(const Token& token) const{
         if(ReverserContract(token)){
             Token reversed_token = token;
             std::reverse(reversed_token.buffer.begin(),

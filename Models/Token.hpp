@@ -16,12 +16,16 @@ namespace reverser
     class Token
     {
     public:
+        Token(const std::string& buffer);
+        Token()=default;
+
         bool AddToBuffer(char symbol);
         void SetBuffer(const std::string &buffer);
 
         const std::string &GetBuffer() const;
         std::string &GetBuffer();
         ETokenType GetType() const;
+        bool operator==(const Token& rhs) const;
 
     private:
         bool NoneHandler(char symbol);

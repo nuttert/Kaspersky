@@ -6,11 +6,11 @@
 
 namespace reverser
 {
-    void WriterImpl::Start()
+    void WriterImpl::Start() const
     {
         isRun = true;
     }
-    void WriterImpl::Stop()
+    void WriterImpl::Stop() const
     {
         isRun = false;
     }

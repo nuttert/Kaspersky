@@ -6,6 +6,10 @@
 
 namespace reverser
 {
+    Token::Token(const std::string& buffer){
+        SetBuffer(buffer);
+    }
+
     void Token::SetBuffer(const std::string &buffer)
     {
         for (const auto &symbol : buffer)
@@ -87,5 +91,8 @@ namespace reverser
     ETokenType Token::GetType() const
     {
         return type;
+    }
+    bool Token::operator==(const Token& rhs) const{
+        return buffer == rhs.buffer;
     }
 } // namespace reverser

@@ -6,6 +6,6 @@
 namespace reverser{
     class ReverserImpl: public Reverser{
     public:
-        Token ReverseWord(const Token& token) override;
+        Token ReverseWord(const Token& token) const override;
     };
 }

@@ -1,11 +1,14 @@
-#include <iostream>
-#include <vector>
-#include "TokenProcessor/impl/TokenProcessor.hpp"
+#include "Runner/impl/Runner.hpp"
 
+#include <iostream>
 
 
 int main(void){
-    auto processor = std::make_shared<reverser::TokenProcessorImpl>();
-    processor->Start();
+    try{
+        auto runner = std::make_shared<reverser::RunnerImpl>();
+        runner->Run();
+    }catch(const std::exception& e){
+        std::cerr << e.what();
+    }
     return 0;
 }

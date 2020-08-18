@@ -1,2 +1,0 @@
-/usr/bin/ar qc libTokenProcessor.a  CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o CMakeFiles/TokenProcessor.dir/impl/TokenProcessor.cpp.o
-/usr/bin/ranlib libTokenProcessor.a

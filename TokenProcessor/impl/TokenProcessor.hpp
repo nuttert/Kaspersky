@@ -4,17 +4,24 @@
 #include <future>
 #include <atomic>
 
-namespace reverser{
-    class TokenProcessorImpl: public TokenProcessor{
+namespace reverser
+{
+    class TokenProcessorImpl : public TokenProcessor
+    {
     public:
+        using TokenProcessor::TokenProcessor;
         TokenProcessorImpl();
-        void Start() override;
-        void Stop() override;
+        void Start() const override;
+        void Stop() const override;
+        void Wait() const override;
+
         ~TokenProcessorImpl();
+
     private:
-        void StopImpl();
+        void StopImpl() const;
+
     private:
-        std::atomic<bool> isRun;
-        std::future<void> runner;
+        mutable std::atomic<bool> isRun;
+        mutable std::future<void> runner;
     };
-}
+} // namespace reverser

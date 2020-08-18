@@ -1,9 +1,10 @@
 #pragma once
 #include <string>
 
-
-namespace reverser{
-    enum class ETokenType{
+namespace reverser
+{
+    enum class ETokenType
+    {
         kLetter,
         kSymbol,
         kEOF,
@@ -12,22 +13,26 @@ namespace reverser{
 
     class ReverserImpl;
 
-    class Token{
+    class Token
+    {
     public:
         bool AddToBuffer(char symbol);
+        void SetBuffer(const std::string &buffer);
 
-        const std::string& GetBuffer() const;
-              std::string& GetBuffer();
+        const std::string &GetBuffer() const;
+        std::string &GetBuffer();
         ETokenType GetType() const;
+
     private:
         bool NoneHandler(char symbol);
         bool SymbolHandler(char symbol);
         bool LetterHandler(char symbol);
         bool EOFHandler(char symbol);
+
     private:
         ETokenType type = ETokenType::kNone;
-        std::string buffer;
+        std::string buffer{};
 
         friend ReverserImpl;
     };
-}
+} // namespace reverser

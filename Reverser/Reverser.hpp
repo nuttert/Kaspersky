@@ -2,9 +2,11 @@
 #include <string>
 #include "Models/Token.hpp"
 
-namespace reverser{
-    class Reverser{
+namespace reverser
+{
+    class Reverser
+    {
     public:
-        virtual Token ReverseWord(const Token& token) = 0;
+        virtual Token ReverseWord(const Token &token) = 0;
     };
-}
+} // namespace reverser

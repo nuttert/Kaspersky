@@ -3,5 +3,5 @@
 
 namespace reverser
 {
-    bool ReverserContract(const Token &token);
+    bool WriterContract(const Token &token);
 }

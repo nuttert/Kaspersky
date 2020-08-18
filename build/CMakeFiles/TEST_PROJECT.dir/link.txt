@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/TEST_PROJECT.dir/main.cpp.o  -o TEST_PROJECT  Runner/libRunner.a TokenProcessor/libTokenProcessor.a Interrupter/libInterrupter.a Reader/libReader.a Reverser/libReverser.a Writer/libWriter.a Models/libModels.a Utilities/libUtilities.a -lpthread 

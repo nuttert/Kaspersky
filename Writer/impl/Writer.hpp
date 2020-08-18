@@ -4,16 +4,17 @@
 #include <mutex>
 #include <condition_variable>
 
-namespace reverser{
-    class WriterImpl: public Writer{
+namespace reverser
+{
+    class WriterImpl : public Writer
+    {
     public:
         void Start() override;
         void Stop() override;
-        void WriteToken(const Token& token) const;
+        void WriteToken(const Token &token) const;
         ~WriterImpl();
+
     private:
         std::atomic<bool> isRun;
-        mutable std::mutex mutex;
-        mutable std::condition_variable cv;
     };
-}
+} // namespace reverser

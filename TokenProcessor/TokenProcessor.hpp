@@ -13,8 +13,9 @@ namespace reverser{
             std::shared_ptr<Reader>,
             std::shared_ptr<Writer>,
             std::shared_ptr<Reverser>);
-        virtual void Start() = 0;
-        virtual void Stop() = 0;
+        virtual void Start() const  = 0;
+        virtual void Stop() const = 0;
+        virtual void Wait() const = 0;
     protected:
         std::shared_ptr<Reader> reader;
         std::shared_ptr<Writer> writer;

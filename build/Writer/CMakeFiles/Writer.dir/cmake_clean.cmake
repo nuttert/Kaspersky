@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o"
   "CMakeFiles/Writer.dir/impl/Writer.cpp.o"
   "libWriter.a"
   "libWriter.pdb"

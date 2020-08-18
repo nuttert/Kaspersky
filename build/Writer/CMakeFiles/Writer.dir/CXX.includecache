@@ -10,15 +10,27 @@
 string
 -
 
-../Writer/Writer.hpp
+../Utilities/Exceptions/Exceptions.hpp
 string
 -
+
+../Writer/Contract/WriterContract.hpp
+Models/Token.hpp
+../Writer/Contract/Models/Token.hpp
+
+../Writer/Writer.hpp
 Models/Token.hpp
 ../Writer/Models/Token.hpp
+string
+-
 
 /Test/Writer/impl/Writer.cpp
 Writer.hpp
 /Test/Writer/impl/Writer.hpp
+Writer/Contract/WriterContract.hpp
+/Test/Writer/impl/Writer/Contract/WriterContract.hpp
+Utilities/Exceptions/Exceptions.hpp
+/Test/Writer/impl/Utilities/Exceptions/Exceptions.hpp
 iostream
 -
 future

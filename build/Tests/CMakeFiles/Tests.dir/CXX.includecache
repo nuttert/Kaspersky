@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Test/Tests/main.cpp
+gtest/gtest.h
+-
+tests.hpp
+/Test/Tests/tests.hpp
+
+/Test/Tests/tests.hpp
+gtest/gtest.h
+-
+gmock/gmock.h
+-
+

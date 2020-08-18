@@ -253,7 +253,7 @@ CMakeFiles/TEST_PROJECT.dir/all: Utilities/CMakeFiles/Utilities.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST_PROJECT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Test/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /Test/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TEST_PROJECT.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/TEST_PROJECT.dir/rule
@@ -410,12 +410,12 @@ TokenProcessor/CMakeFiles/TokenProcessor.dir/clean:
 Writer/CMakeFiles/Writer.dir/all:
 	$(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/depend
 	$(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Test/build/CMakeFiles --progress-num=21,22 "Built target Writer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Test/build/CMakeFiles --progress-num=21,22,23 "Built target Writer"
 .PHONY : Writer/CMakeFiles/Writer.dir/all
 
 # Build rule for subdir invocation for target.
 Writer/CMakeFiles/Writer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Test/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Test/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 Writer/CMakeFiles/Writer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Test/build/CMakeFiles 0
 .PHONY : Writer/CMakeFiles/Writer.dir/rule

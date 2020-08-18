@@ -125,6 +125,33 @@ Writer/fast:
 	cd /Test/build && $(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/build
 .PHONY : Writer/fast
 
+Contract/WriterContract.o: Contract/WriterContract.cpp.o
+
+.PHONY : Contract/WriterContract.o
+
+# target to build an object file
+Contract/WriterContract.cpp.o:
+	cd /Test/build && $(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o
+.PHONY : Contract/WriterContract.cpp.o
+
+Contract/WriterContract.i: Contract/WriterContract.cpp.i
+
+.PHONY : Contract/WriterContract.i
+
+# target to preprocess a source file
+Contract/WriterContract.cpp.i:
+	cd /Test/build && $(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.i
+.PHONY : Contract/WriterContract.cpp.i
+
+Contract/WriterContract.s: Contract/WriterContract.cpp.s
+
+.PHONY : Contract/WriterContract.s
+
+# target to generate assembly for a file
+Contract/WriterContract.cpp.s:
+	cd /Test/build && $(MAKE) -f Writer/CMakeFiles/Writer.dir/build.make Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.s
+.PHONY : Contract/WriterContract.cpp.s
+
 impl/Writer.o: impl/Writer.cpp.o
 
 .PHONY : impl/Writer.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Writer"
+	@echo "... Contract/WriterContract.o"
+	@echo "... Contract/WriterContract.i"
+	@echo "... Contract/WriterContract.s"
 	@echo "... impl/Writer.o"
 	@echo "... impl/Writer.i"
 	@echo "... impl/Writer.s"

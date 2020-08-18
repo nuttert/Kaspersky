@@ -1,4 +1,5 @@
 #include "TokenProcessor.hpp"
+#include "Utilities/Exceptions/Exceptions.hpp"
 
 namespace reverser{
     TokenProcessor::TokenProcessor(
@@ -10,6 +11,6 @@ namespace reverser{
             reverser(reverser){
                 if( !reader ||
                     !writer ||
-                    !reverser) throw std::runtime_error("You have to initialize reader, writer, reverser!");
+                    !reverser) throw exceptions::InitializationException("You have to initialize reader, writer, reverser!");
             };
 }

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Test/Writer/Contract/WriterContract.cpp" "/Test/build/Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o"
   "/Test/Writer/impl/Writer.cpp" "/Test/build/Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

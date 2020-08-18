@@ -11,20 +11,20 @@ string
 -
 
 ../Reader/Reader.hpp
-string
--
 Models/Token.hpp
 ../Reader/Models/Token.hpp
-
-../Reader/impl/Reader.hpp
 string
 -
-atomic
--
+
+../Reader/impl/Reader.hpp
 Models/Token.hpp
 ../Reader/impl/Models/Token.hpp
 Reader/Reader.hpp
 ../Reader/impl/Reader/Reader.hpp
+string
+-
+atomic
+-
 
 ../Reverser/Reverser.hpp
 string
@@ -49,10 +49,10 @@ memory
 -
 
 ../Writer/Writer.hpp
-string
--
 Models/Token.hpp
 ../Writer/Models/Token.hpp
+string
+-
 
 ../Writer/impl/Writer.hpp
 string

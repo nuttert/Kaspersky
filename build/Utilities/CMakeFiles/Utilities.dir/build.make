@@ -57,27 +57,27 @@ include Utilities/CMakeFiles/Utilities.dir/progress.make
 # Include the compile flags for this target's objects.
 include Utilities/CMakeFiles/Utilities.dir/flags.make
 
-Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.o: Utilities/CMakeFiles/Utilities.dir/flags.make
-Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.o: ../Utilities/Utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.o"
-	cd /Test/build/Utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Utilities.dir/Utilities.cpp.o -c /Test/Utilities/Utilities.cpp
+Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.o: Utilities/CMakeFiles/Utilities.dir/flags.make
+Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.o: ../Utilities/Functions/Functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.o"
+	cd /Test/build/Utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Utilities.dir/Functions/Functions.cpp.o -c /Test/Utilities/Functions/Functions.cpp
 
-Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utilities.dir/Utilities.cpp.i"
-	cd /Test/build/Utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Utilities/Utilities.cpp > CMakeFiles/Utilities.dir/Utilities.cpp.i
+Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utilities.dir/Functions/Functions.cpp.i"
+	cd /Test/build/Utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Utilities/Functions/Functions.cpp > CMakeFiles/Utilities.dir/Functions/Functions.cpp.i
 
-Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utilities.dir/Utilities.cpp.s"
-	cd /Test/build/Utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Utilities/Utilities.cpp -o CMakeFiles/Utilities.dir/Utilities.cpp.s
+Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utilities.dir/Functions/Functions.cpp.s"
+	cd /Test/build/Utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Utilities/Functions/Functions.cpp -o CMakeFiles/Utilities.dir/Functions/Functions.cpp.s
 
 # Object files for target Utilities
 Utilities_OBJECTS = \
-"CMakeFiles/Utilities.dir/Utilities.cpp.o"
+"CMakeFiles/Utilities.dir/Functions/Functions.cpp.o"
 
 # External object files for target Utilities
 Utilities_EXTERNAL_OBJECTS =
 
-Utilities/libUtilities.a: Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.o
+Utilities/libUtilities.a: Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.o
 Utilities/libUtilities.a: Utilities/CMakeFiles/Utilities.dir/build.make
 Utilities/libUtilities.a: Utilities/CMakeFiles/Utilities.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libUtilities.a"

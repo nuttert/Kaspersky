@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Test/Utilities/Utilities.cpp
-Utilities.hpp
-/Test/Utilities/Utilities.hpp
+/Test/Utilities/Functions/Functions.cpp
+Functions.hpp
+/Test/Utilities/Functions/Functions.hpp
 stdio.h
 -
 ctype.h
 -
 
-/Test/Utilities/Utilities.hpp
+/Test/Utilities/Functions/Functions.hpp
 

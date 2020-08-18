@@ -1,2 +1,2 @@
-/usr/bin/ar qc libWriter.a  CMakeFiles/Writer.dir/impl/Writer.cpp.o
+/usr/bin/ar qc libWriter.a  CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o CMakeFiles/Writer.dir/impl/Writer.cpp.o
 /usr/bin/ranlib libWriter.a

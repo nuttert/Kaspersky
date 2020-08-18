@@ -1,2 +1,2 @@
-/usr/bin/ar qc libRunner.a  CMakeFiles/Runner.dir/Runner.cpp.o CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o
+/usr/bin/ar qc libRunner.a  CMakeFiles/Runner.dir/Runner.cpp.o CMakeFiles/Runner.dir/impl/Runner.cpp.o
 /usr/bin/ranlib libRunner.a

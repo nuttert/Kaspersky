@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../Utilities/Utilities.hpp
+../Utilities/Exceptions/Exceptions.hpp
+string
+-
+
+../Utilities/Functions/Functions.hpp
 
 /Test/Models/Token.cpp
 Token.hpp
 /Test/Models/Token.hpp
-Utilities/Utilities.hpp
-/Test/Models/Utilities/Utilities.hpp
+Utilities/Functions/Functions.hpp
+/Test/Models/Utilities/Functions/Functions.hpp
+Utilities/Exceptions/Exceptions.hpp
+/Test/Models/Utilities/Exceptions/Exceptions.hpp
 stdexcept
 -
 

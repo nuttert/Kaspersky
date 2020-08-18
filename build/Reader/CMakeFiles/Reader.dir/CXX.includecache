@@ -11,14 +11,20 @@ string
 -
 
 ../Reader/Reader.hpp
-string
--
 Models/Token.hpp
 ../Reader/Models/Token.hpp
+string
+-
+
+../Utilities/Exceptions/Exceptions.hpp
+string
+-
 
 /Test/Reader/impl/Reader.cpp
 Reader.hpp
 /Test/Reader/impl/Reader.hpp
+Utilities/Exceptions/Exceptions.hpp
+/Test/Reader/impl/Utilities/Exceptions/Exceptions.hpp
 fstream
 -
 iostream
@@ -31,12 +37,12 @@ sys/select.h
 -
 
 /Test/Reader/impl/Reader.hpp
-string
--
-atomic
--
 Models/Token.hpp
 /Test/Reader/impl/Models/Token.hpp
 Reader/Reader.hpp
 /Test/Reader/impl/Reader/Reader.hpp
+string
+-
+atomic
+-
 

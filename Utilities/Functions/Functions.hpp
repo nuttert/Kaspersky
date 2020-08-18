@@ -1,5 +1,6 @@
 #pragma once
 
-namespace utilities{
+namespace utilities
+{
     bool isLetter(int symbol);
 }

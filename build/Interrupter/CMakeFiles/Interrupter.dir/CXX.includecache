@@ -6,5 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Test/Interrupter/Interrupter.cpp
+../Interrupter/Interrupter.hpp
+
+../Utilities/Exceptions/Exceptions.hpp
+string
+-
+
+/Test/Interrupter/impl/Interrupter.cpp
+Interrupter.hpp
+/Test/Interrupter/impl/Interrupter.hpp
+Utilities/Exceptions/Exceptions.hpp
+/Test/Interrupter/impl/Utilities/Exceptions/Exceptions.hpp
+csignal
+-
+functional
+-
+iostream
+-
+
+/Test/Interrupter/impl/Interrupter.hpp
+Interrupter/Interrupter.hpp
+/Test/Interrupter/impl/Interrupter/Interrupter.hpp
+atomic
+-
+functional
+-
 

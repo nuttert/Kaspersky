@@ -125,32 +125,32 @@ Utilities/fast:
 	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/build
 .PHONY : Utilities/fast
 
-Utilities.o: Utilities.cpp.o
+Functions/Functions.o: Functions/Functions.cpp.o
 
-.PHONY : Utilities.o
+.PHONY : Functions/Functions.o
 
 # target to build an object file
-Utilities.cpp.o:
-	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.o
-.PHONY : Utilities.cpp.o
+Functions/Functions.cpp.o:
+	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.o
+.PHONY : Functions/Functions.cpp.o
 
-Utilities.i: Utilities.cpp.i
+Functions/Functions.i: Functions/Functions.cpp.i
 
-.PHONY : Utilities.i
+.PHONY : Functions/Functions.i
 
 # target to preprocess a source file
-Utilities.cpp.i:
-	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.i
-.PHONY : Utilities.cpp.i
+Functions/Functions.cpp.i:
+	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.i
+.PHONY : Functions/Functions.cpp.i
 
-Utilities.s: Utilities.cpp.s
+Functions/Functions.s: Functions/Functions.cpp.s
 
-.PHONY : Utilities.s
+.PHONY : Functions/Functions.s
 
 # target to generate assembly for a file
-Utilities.cpp.s:
-	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/Utilities.cpp.s
-.PHONY : Utilities.cpp.s
+Functions/Functions.cpp.s:
+	cd /Test/build && $(MAKE) -f Utilities/CMakeFiles/Utilities.dir/build.make Utilities/CMakeFiles/Utilities.dir/Functions/Functions.cpp.s
+.PHONY : Functions/Functions.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Utilities"
-	@echo "... Utilities.o"
-	@echo "... Utilities.i"
-	@echo "... Utilities.s"
+	@echo "... Functions/Functions.o"
+	@echo "... Functions/Functions.i"
+	@echo "... Functions/Functions.s"
 .PHONY : help
 
 

@@ -152,32 +152,32 @@ Runner.cpp.s:
 	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/Runner.cpp.s
 .PHONY : Runner.cpp.s
 
-impl/RunnerImpl.o: impl/RunnerImpl.cpp.o
+impl/Runner.o: impl/Runner.cpp.o
 
-.PHONY : impl/RunnerImpl.o
+.PHONY : impl/Runner.o
 
 # target to build an object file
-impl/RunnerImpl.cpp.o:
-	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o
-.PHONY : impl/RunnerImpl.cpp.o
+impl/Runner.cpp.o:
+	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.o
+.PHONY : impl/Runner.cpp.o
 
-impl/RunnerImpl.i: impl/RunnerImpl.cpp.i
+impl/Runner.i: impl/Runner.cpp.i
 
-.PHONY : impl/RunnerImpl.i
+.PHONY : impl/Runner.i
 
 # target to preprocess a source file
-impl/RunnerImpl.cpp.i:
-	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.i
-.PHONY : impl/RunnerImpl.cpp.i
+impl/Runner.cpp.i:
+	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.i
+.PHONY : impl/Runner.cpp.i
 
-impl/RunnerImpl.s: impl/RunnerImpl.cpp.s
+impl/Runner.s: impl/Runner.cpp.s
 
-.PHONY : impl/RunnerImpl.s
+.PHONY : impl/Runner.s
 
 # target to generate assembly for a file
-impl/RunnerImpl.cpp.s:
-	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.s
-.PHONY : impl/RunnerImpl.cpp.s
+impl/Runner.cpp.s:
+	cd /Test/build && $(MAKE) -f Runner/CMakeFiles/Runner.dir/build.make Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.s
+.PHONY : impl/Runner.cpp.s
 
 # Help Target
 help:
@@ -191,9 +191,9 @@ help:
 	@echo "... Runner.o"
 	@echo "... Runner.i"
 	@echo "... Runner.s"
-	@echo "... impl/RunnerImpl.o"
-	@echo "... impl/RunnerImpl.i"
-	@echo "... impl/RunnerImpl.s"
+	@echo "... impl/Runner.o"
+	@echo "... impl/Runner.i"
+	@echo "... impl/Runner.s"
 .PHONY : help
 
 

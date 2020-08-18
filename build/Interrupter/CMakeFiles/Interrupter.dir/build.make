@@ -57,27 +57,27 @@ include Interrupter/CMakeFiles/Interrupter.dir/progress.make
 # Include the compile flags for this target's objects.
 include Interrupter/CMakeFiles/Interrupter.dir/flags.make
 
-Interrupter/CMakeFiles/Interrupter.dir/Interrupter.cpp.o: Interrupter/CMakeFiles/Interrupter.dir/flags.make
-Interrupter/CMakeFiles/Interrupter.dir/Interrupter.cpp.o: ../Interrupter/Interrupter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Interrupter/CMakeFiles/Interrupter.dir/Interrupter.cpp.o"
-	cd /Test/build/Interrupter && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interrupter.dir/Interrupter.cpp.o -c /Test/Interrupter/Interrupter.cpp
+Interrupter/CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o: Interrupter/CMakeFiles/Interrupter.dir/flags.make
+Interrupter/CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o: ../Interrupter/impl/Interrupter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Interrupter/CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o"
+	cd /Test/build/Interrupter && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o -c /Test/Interrupter/impl/Interrupter.cpp
 
-Interrupter/CMakeFiles/Interrupter.dir/Interrupter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interrupter.dir/Interrupter.cpp.i"
-	cd /Test/build/Interrupter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Interrupter/Interrupter.cpp > CMakeFiles/Interrupter.dir/Interrupter.cpp.i
+Interrupter/CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.i"
+	cd /Test/build/Interrupter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Interrupter/impl/Interrupter.cpp > CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.i
 
-Interrupter/CMakeFiles/Interrupter.dir/Interrupter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interrupter.dir/Interrupter.cpp.s"
-	cd /Test/build/Interrupter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Interrupter/Interrupter.cpp -o CMakeFiles/Interrupter.dir/Interrupter.cpp.s
+Interrupter/CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.s"
+	cd /Test/build/Interrupter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Interrupter/impl/Interrupter.cpp -o CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.s
 
 # Object files for target Interrupter
 Interrupter_OBJECTS = \
-"CMakeFiles/Interrupter.dir/Interrupter.cpp.o"
+"CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o"
 
 # External object files for target Interrupter
 Interrupter_EXTERNAL_OBJECTS =
 
-Interrupter/libInterrupter.a: Interrupter/CMakeFiles/Interrupter.dir/Interrupter.cpp.o
+Interrupter/libInterrupter.a: Interrupter/CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o
 Interrupter/libInterrupter.a: Interrupter/CMakeFiles/Interrupter.dir/build.make
 Interrupter/libInterrupter.a: Interrupter/CMakeFiles/Interrupter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libInterrupter.a"

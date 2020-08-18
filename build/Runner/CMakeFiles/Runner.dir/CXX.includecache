@@ -6,7 +6,47 @@
 
 #IncludeRegexTransform: 
 
-/Test/Runner/Runner.cpp
+../Interrupter/Interrupter.hpp
 
-/Test/Runner/impl/RunnerImpl.cpp
+../Interrupter/impl/Interrupter.hpp
+Interrupter/Interrupter.hpp
+../Interrupter/impl/Interrupter/Interrupter.hpp
+atomic
+-
+functional
+-
+
+../Runner/Runner.hpp
+memory
+-
+
+../TokenProcessor/TokenProcessor.hpp
+memory
+-
+
+../TokenProcessor/impl/TokenProcessor.hpp
+TokenProcessor/TokenProcessor.hpp
+../TokenProcessor/impl/TokenProcessor/TokenProcessor.hpp
+mutex
+-
+future
+-
+atomic
+-
+
+/Test/Runner/impl/Runner.cpp
+Runner.hpp
+/Test/Runner/impl/Runner.hpp
+TokenProcessor/impl/TokenProcessor.hpp
+/Test/Runner/impl/TokenProcessor/impl/TokenProcessor.hpp
+Interrupter/impl/Interrupter.hpp
+/Test/Runner/impl/Interrupter/impl/Interrupter.hpp
+iostream
+-
+
+/Test/Runner/impl/Runner.hpp
+Runner/Runner.hpp
+/Test/Runner/impl/Runner/Runner.hpp
+atomic
+-
 

@@ -3,6 +3,7 @@
 
 Reader/CMakeFiles/Reader.dir/impl/Reader.cpp.o: ../Models/Token.hpp
 Reader/CMakeFiles/Reader.dir/impl/Reader.cpp.o: ../Reader/Reader.hpp
+Reader/CMakeFiles/Reader.dir/impl/Reader.cpp.o: ../Utilities/Exceptions/Exceptions.hpp
 Reader/CMakeFiles/Reader.dir/impl/Reader.cpp.o: ../Reader/impl/Reader.cpp
 Reader/CMakeFiles/Reader.dir/impl/Reader.cpp.o: ../Reader/impl/Reader.hpp
 

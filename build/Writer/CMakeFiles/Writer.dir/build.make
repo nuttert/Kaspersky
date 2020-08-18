@@ -57,9 +57,22 @@ include Writer/CMakeFiles/Writer.dir/progress.make
 # Include the compile flags for this target's objects.
 include Writer/CMakeFiles/Writer.dir/flags.make
 
+Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o: Writer/CMakeFiles/Writer.dir/flags.make
+Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o: ../Writer/Contract/WriterContract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o"
+	cd /Test/build/Writer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o -c /Test/Writer/Contract/WriterContract.cpp
+
+Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Writer.dir/Contract/WriterContract.cpp.i"
+	cd /Test/build/Writer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Writer/Contract/WriterContract.cpp > CMakeFiles/Writer.dir/Contract/WriterContract.cpp.i
+
+Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Writer.dir/Contract/WriterContract.cpp.s"
+	cd /Test/build/Writer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Writer/Contract/WriterContract.cpp -o CMakeFiles/Writer.dir/Contract/WriterContract.cpp.s
+
 Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.o: Writer/CMakeFiles/Writer.dir/flags.make
 Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.o: ../Writer/impl/Writer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.o"
 	cd /Test/build/Writer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Writer.dir/impl/Writer.cpp.o -c /Test/Writer/impl/Writer.cpp
 
 Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.i: cmake_force
@@ -72,15 +85,17 @@ Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.s: cmake_force
 
 # Object files for target Writer
 Writer_OBJECTS = \
+"CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o" \
 "CMakeFiles/Writer.dir/impl/Writer.cpp.o"
 
 # External object files for target Writer
 Writer_EXTERNAL_OBJECTS =
 
+Writer/libWriter.a: Writer/CMakeFiles/Writer.dir/Contract/WriterContract.cpp.o
 Writer/libWriter.a: Writer/CMakeFiles/Writer.dir/impl/Writer.cpp.o
 Writer/libWriter.a: Writer/CMakeFiles/Writer.dir/build.make
 Writer/libWriter.a: Writer/CMakeFiles/Writer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libWriter.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libWriter.a"
 	cd /Test/build/Writer && $(CMAKE_COMMAND) -P CMakeFiles/Writer.dir/cmake_clean_target.cmake
 	cd /Test/build/Writer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Writer.dir/link.txt --verbose=$(VERBOSE)
 

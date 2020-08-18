@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../TokenProcessor/TokenProcessor.hpp
+../Runner/Runner.hpp
 memory
 -
 
-/Test/TokenProcessor/impl/TokenProcessor.hpp
-TokenProcessor/TokenProcessor.hpp
-/Test/TokenProcessor/impl/TokenProcessor/TokenProcessor.hpp
-mutex
--
-future
--
+/Test/Runner/impl/Runner.hpp
+Runner/Runner.hpp
+/Test/Runner/impl/Runner/Runner.hpp
 atomic
 -
 
 /Test/main.cpp
+Runner/impl/Runner.hpp
+/Test/Runner/impl/Runner.hpp
 iostream
 -
-vector
--
-TokenProcessor/impl/TokenProcessor.hpp
-/Test/TokenProcessor/impl/TokenProcessor.hpp
 

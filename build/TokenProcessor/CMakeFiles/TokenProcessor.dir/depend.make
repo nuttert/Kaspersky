@@ -5,6 +5,7 @@ TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp
 TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o: ../TokenProcessor/Contract/TokenProcessorContract.cpp
 TokenProcessor/CMakeFiles/TokenProcessor.dir/Contract/TokenProcessorContract.cpp.o: ../TokenProcessor/Contract/TokenProcessorContract.hpp
 
+TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o: ../Utilities/Exceptions/Exceptions.hpp
 TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o: ../TokenProcessor/TokenProcessor.cpp
 TokenProcessor/CMakeFiles/TokenProcessor.dir/TokenProcessor.cpp.o: ../TokenProcessor/TokenProcessor.hpp
 

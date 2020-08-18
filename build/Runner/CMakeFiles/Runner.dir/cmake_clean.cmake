@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Runner.dir/Runner.cpp.o"
-  "CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o"
+  "CMakeFiles/Runner.dir/impl/Runner.cpp.o"
   "libRunner.a"
   "libRunner.pdb"
 )

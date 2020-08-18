@@ -70,29 +70,29 @@ Runner/CMakeFiles/Runner.dir/Runner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Runner.dir/Runner.cpp.s"
 	cd /Test/build/Runner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Runner/Runner.cpp -o CMakeFiles/Runner.dir/Runner.cpp.s
 
-Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o: Runner/CMakeFiles/Runner.dir/flags.make
-Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o: ../Runner/impl/RunnerImpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o"
-	cd /Test/build/Runner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o -c /Test/Runner/impl/RunnerImpl.cpp
+Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.o: Runner/CMakeFiles/Runner.dir/flags.make
+Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.o: ../Runner/impl/Runner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.o"
+	cd /Test/build/Runner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Runner.dir/impl/Runner.cpp.o -c /Test/Runner/impl/Runner.cpp
 
-Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.i"
-	cd /Test/build/Runner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Runner/impl/RunnerImpl.cpp > CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.i
+Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Runner.dir/impl/Runner.cpp.i"
+	cd /Test/build/Runner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Test/Runner/impl/Runner.cpp > CMakeFiles/Runner.dir/impl/Runner.cpp.i
 
-Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.s"
-	cd /Test/build/Runner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Runner/impl/RunnerImpl.cpp -o CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.s
+Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Runner.dir/impl/Runner.cpp.s"
+	cd /Test/build/Runner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Test/Runner/impl/Runner.cpp -o CMakeFiles/Runner.dir/impl/Runner.cpp.s
 
 # Object files for target Runner
 Runner_OBJECTS = \
 "CMakeFiles/Runner.dir/Runner.cpp.o" \
-"CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o"
+"CMakeFiles/Runner.dir/impl/Runner.cpp.o"
 
 # External object files for target Runner
 Runner_EXTERNAL_OBJECTS =
 
 Runner/libRunner.a: Runner/CMakeFiles/Runner.dir/Runner.cpp.o
-Runner/libRunner.a: Runner/CMakeFiles/Runner.dir/impl/RunnerImpl.cpp.o
+Runner/libRunner.a: Runner/CMakeFiles/Runner.dir/impl/Runner.cpp.o
 Runner/libRunner.a: Runner/CMakeFiles/Runner.dir/build.make
 Runner/libRunner.a: Runner/CMakeFiles/Runner.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libRunner.a"

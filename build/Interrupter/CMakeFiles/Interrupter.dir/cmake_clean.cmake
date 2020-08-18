@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Interrupter.dir/Interrupter.cpp.o"
+  "CMakeFiles/Interrupter.dir/impl/Interrupter.cpp.o"
   "libInterrupter.a"
   "libInterrupter.pdb"
 )

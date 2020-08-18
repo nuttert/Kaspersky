@@ -1,21 +1,23 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /Test/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_5efcb/fast && /usr/bin/make -f CMakeFiles/cmTC_5efcb.dir/build.make CMakeFiles/cmTC_5efcb.dir/build
-make[1]: Entering directory '/Test/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5efcb.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5efcb.dir/src.c.o   -c /Test/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_5efcb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5efcb.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_5efcb.dir/src.c.o  -o cmTC_5efcb 
-/usr/bin/ld: CMakeFiles/cmTC_5efcb.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_a5435/fast && make[1]: Entering directory '/Test/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a5435.dir/build.make CMakeFiles/cmTC_a5435.dir/build
+make[2]: Entering directory '/Test/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a5435.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a5435.dir/src.c.o   -c /Test/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a5435
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5435.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a5435.dir/src.c.o  -o cmTC_a5435 
+/usr/bin/ld: CMakeFiles/cmTC_a5435.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5efcb.dir/build.make:87: cmTC_5efcb] Error 1
+make[2]: *** [CMakeFiles/cmTC_a5435.dir/build.make:87: cmTC_a5435] Error 1
+make[2]: Leaving directory '/Test/build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_a5435/fast] Error 2
 make[1]: Leaving directory '/Test/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_5efcb/fast] Error 2
 
 
 Source file was:
@@ -41,18 +43,20 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /Test/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_68dfd/fast && /usr/bin/make -f CMakeFiles/cmTC_68dfd.dir/build.make CMakeFiles/cmTC_68dfd.dir/build
-make[1]: Entering directory '/Test/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_68dfd.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_68dfd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_68dfd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68dfd.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_68dfd.dir/CheckFunctionExists.c.o  -o cmTC_68dfd  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_c6e47/fast && make[1]: Entering directory '/Test/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c6e47.dir/build.make CMakeFiles/cmTC_c6e47.dir/build
+make[2]: Entering directory '/Test/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6e47.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c6e47.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c6e47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6e47.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c6e47.dir/CheckFunctionExists.c.o  -o cmTC_c6e47  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_68dfd.dir/build.make:87: cmTC_68dfd] Error 1
+make[2]: *** [CMakeFiles/cmTC_c6e47.dir/build.make:87: cmTC_c6e47] Error 1
+make[2]: Leaving directory '/Test/build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_c6e47/fast] Error 2
 make[1]: Leaving directory '/Test/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_68dfd/fast] Error 2
 
 
 

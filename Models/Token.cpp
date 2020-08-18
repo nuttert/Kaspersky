@@ -9,6 +9,9 @@ namespace reverser
     Token::Token(const std::string& buffer){
         SetBuffer(buffer);
     }
+    Token::Token(const char symbol){
+        AddToBuffer(symbol);
+    }
 
     void Token::SetBuffer(const std::string &buffer)
     {
@@ -22,8 +25,8 @@ namespace reverser
         switch (type)
         {
         case ETokenType::kNone: return NoneHandler(symbol);
-        case ETokenType::kSymbol: return SymbolHandler(symbol);
-        case ETokenType::kLetter: return LetterHandler(symbol);
+        case ETokenType::kSymbols: return SymbolHandler(symbol);
+        case ETokenType::kLetters: return LetterHandler(symbol);
         case ETokenType::kEOF: return EOFHandler(symbol);
         }
         throw exceptions::TokenException("Undefined token type!");
@@ -37,9 +40,9 @@ namespace reverser
             return false;
         }
         else if (utilities::isLetter(symbol))
-            type = ETokenType::kLetter;
+            type = ETokenType::kLetters;
         else
-            type = ETokenType::kSymbol;
+            type = ETokenType::kSymbols;
         buffer += symbol;
         return true;
     }
@@ -48,7 +51,7 @@ namespace reverser
     {
         if (symbol != EOF && !utilities::isLetter(symbol))
         {
-            type = ETokenType::kSymbol;
+            type = ETokenType::kSymbols;
             buffer += symbol;
         }
         else
@@ -60,7 +63,7 @@ namespace reverser
     {
         if (utilities::isLetter(symbol))
         {
-            type = ETokenType::kLetter;
+            type = ETokenType::kLetters;
             buffer += symbol;
         }
         else

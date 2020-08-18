@@ -7,7 +7,6 @@ namespace reverser{
 
         RunnerImpl::RunnerImpl():
         isRun(false),
-        on_ready_handler([]{}),
         Runner(std::make_shared<TokenProcessorImpl>(),
                std::make_shared<InterrupterImpl>(
                             std::bind(&RunnerImpl::SignalDelegator,this)))
@@ -24,7 +23,11 @@ namespace reverser{
                    processor->Wait();
                 });
                 result.wait();
+  
                 isRun = false;
+                isReady = false;
+                processor->Stop();
+                interrupter->Stop();
         }
         RunnerImpl::operator bool() const{
                 return isReady;

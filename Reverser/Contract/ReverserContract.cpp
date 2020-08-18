@@ -2,6 +2,6 @@
 
 namespace reverser{
     bool ReverserContract(const Token& token){
-        return token.GetType() == ETokenType::kLetter;
+        return token.GetType() == ETokenType::kLetters;
     }
 }

@@ -5,8 +5,8 @@ namespace reverser
 {
     enum class ETokenType
     {
-        kLetter,
-        kSymbol,
+        kLetters,
+        kSymbols,
         kEOF,
         kNone
     };
@@ -17,6 +17,7 @@ namespace reverser
     {
     public:
         Token(const std::string& buffer);
+        Token(const char symbol);
         Token()=default;
 
         bool AddToBuffer(char symbol);

@@ -16,6 +16,6 @@ namespace reverser{
     private:
         mutable std::atomic<bool> isRun;
         mutable std::atomic<bool> isReady;
-        OnReadyHandler on_ready_handler;
+        OnReadyHandler on_ready_handler = []{};
     };
 }

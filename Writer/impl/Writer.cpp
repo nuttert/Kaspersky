@@ -37,6 +37,7 @@ namespace reverser
                 break;
             std::cout << buffer[letterIndex++];
         }
+        
         if (descriptorIsActive < 0)
             throw exceptions::DescriptorException("Output file descriptor error!");
     }

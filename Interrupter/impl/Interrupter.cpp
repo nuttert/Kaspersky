@@ -4,9 +4,11 @@
 #include <csignal>
 #include <functional>
 #include <iostream>
+#include <chrono>
 
 namespace reverser
 {
+    using namespace std::chrono_literals;
 
     namespace
     {
@@ -35,6 +37,7 @@ namespace reverser
             return;
         isRun = true;
         std::signal(SIGINT, SignalHandler);
+        CreateRunner();
     }
     void InterrupterImpl::Stop() const
     {
@@ -42,13 +45,40 @@ namespace reverser
             return;
         isRun = false;
         std::signal(SIGINT, SIG_DFL);
+        Wait();
     }
-    void InterrupterImpl::SignalHandlerImpl(int signal)
+    void InterrupterImpl::Wait()const{
+         cv.notify_all();
+         for(const auto& runner:runners) runner.wait();
+    }
+
+    void InterrupterImpl::CreateRunner()const{
+        if(!isRun) return;
+       
+        auto result = std::async([this]{
+            delegator();
+            {
+                std::mutex mutex;
+                std::unique_lock<std::mutex> lk(mutex);
+                cv.wait(lk, [this]{return !isRun || signal;});
+            }
+            if(signal){
+                signal = false;
+                delegator();
+                CreateRunner();
+            }
+        });
+        runners.push_back(std::move(result)); 
+    }
+
+    void InterrupterImpl::SignalHandlerImpl(int signal) const
     {
         std::cout << std::endl
-                  << "Interrupt" << std::endl;
-        delegator();
+                << "Interrupt" << std::endl;
+        this->signal = true;
+        cv.notify_all();
     }
+
     InterrupterImpl::~InterrupterImpl()
     {
         Stop();

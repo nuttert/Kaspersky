@@ -15,4 +15,4 @@ run:
 
 .PHONY: test
 test:
-	mkdir -p build && cd ./build && cmake .. -D TEST_MODE=TRUE  && make && ./TEST_PROJECT
+	mkdir -p build && cd ./build && cmake .. -D TEST_MODE=TRUE  && make && ./TEST

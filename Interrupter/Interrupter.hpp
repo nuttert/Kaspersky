@@ -7,6 +7,7 @@ namespace reverser
     public:
         virtual void Start() const = 0;
         virtual void Stop() const = 0;
+        virtual void Wait() const = 0;
         ~Interrupter() = default;
     };
 } // namespace reverser

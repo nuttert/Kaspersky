@@ -9,6 +9,7 @@ set(BUILD_FOLDER build)
 
 if(${TEST_MODE})
     file(GLOB SOURCES "Tests/main.cpp")
+    project(TEST VERSION 0.0.1)
 else()
     file(GLOB SOURCES "main.cpp")
 endif()

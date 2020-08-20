@@ -21,6 +21,8 @@ TEST_F(Tester, test_writer)
     Times(1);
     EXPECT_CALL(*interrupter_mock, Stop()).
     Times(1);
+    EXPECT_CALL(*interrupter_mock, Wait()).
+    Times(1);
     EXPECT_CALL(*reader_mock, Start()).
     Times(1);
     EXPECT_CALL(*reader_mock, Stop()).

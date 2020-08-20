@@ -2,7 +2,7 @@
 #include "TokenProcessor/impl/TokenProcessor.hpp"
 #include "Interrupter/impl/Interrupter.hpp"
 #include <iostream>
-
+using namespace std::chrono_literals;
 namespace reverser
 {
 
@@ -18,28 +18,18 @@ namespace reverser
                 if (isRun)
                         std::runtime_error("Runner already started!");
                 isRun = true;
-                auto result = std::async([this] {
-                        interrupter->Start();
-                        processor->Start();
-                        isReady = true;
-                        on_ready_handler();
-                        processor->Wait();
-                });
-                result.wait();
+               
+                interrupter->Start();
+                processor->Start();
+
+                processor->Wait();
+                interrupter->Wait();
 
                 isRun = false;
-                isReady = false;
                 processor->Stop();
                 interrupter->Stop();
         }
-        RunnerImpl::operator bool() const
-        {
-                return isReady;
-        }
-        void RunnerImpl::OnReady(OnReadyHandler &&handler)
-        {
-                on_ready_handler = std::move(handler);
-        }
+
         void RunnerImpl::SignalDelegator()
         {
                 processor->Stop();

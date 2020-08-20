@@ -7,6 +7,8 @@
 
 namespace reverser
 {
+    class Tokenizer;
+
     class ReaderImpl : public Reader
     {
     public:

@@ -1,6 +1,8 @@
 #pragma once
 #include "Mocks.hpp"
 
+#include "Models/Actions/Tokenizer/impl/Tokenizer.hpp"
+
 #include <gtest/gtest.h>
 #include <csignal>
 #include <thread>
@@ -41,24 +43,24 @@ namespace{
         
         template<typename ...Args>
         void SequenceCallInReverser(testing::Sequence& sequence, const Args& ...args){
-            (EXPECT_CALL(*reverser_mock, ReverseWord(reverser::Token(args))).
+            (EXPECT_CALL(*reverser_mock, ReverseWord(Token(args))).
             InSequence(sequence), ...);
         }
         template<typename ...Args>
         void SequenceCallOutReverser(testing::Sequence& sequence, const Args& ...args){
             (EXPECT_CALL(*reverser_mock, ReverseWord(::testing::_)).
             InSequence(sequence).
-            WillOnce(::testing::Return(reverser::Token(args))), ...);
+            WillOnce(::testing::Return(Token(args))), ...);
         }
         template<typename ...Args>
         void SequenceCallOutReader(testing::Sequence& sequence, const Args& ...args){
             (EXPECT_CALL(*reader_mock, ReadToken()).
             InSequence(sequence).
-            WillOnce(::testing::Return(reverser::Token(args))), ...);
+            WillOnce(::testing::Return(Token(args))), ...);
         }
         template<typename ...Args>
         void SequenceCallInWriter(testing::Sequence& sequence, const Args& ...args){
-            (EXPECT_CALL(*writer_mock,WriteToken(reverser::Token(args))).
+            (EXPECT_CALL(*writer_mock,WriteToken(Token(args))).
             InSequence(sequence), ...);
         }
 

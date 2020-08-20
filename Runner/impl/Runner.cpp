@@ -21,15 +21,14 @@ namespace reverser
                 auto result = std::async([this] {
                         interrupter->Start();
                         processor->Start();
-                        isReady = true;
-                        on_ready_handler();
+
+                        interrupter->Wait();
                         processor->Wait();
                 });
                 result.wait();
 
                 isRun = false;
                 isReady = false;
-                processor->Stop();
                 interrupter->Stop();
         }
         RunnerImpl::operator bool() const
@@ -43,6 +42,5 @@ namespace reverser
         void RunnerImpl::SignalDelegator()
         {
                 processor->Stop();
-                interrupter->Stop();
         }
 } // namespace reverser

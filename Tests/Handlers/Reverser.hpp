@@ -21,6 +21,8 @@ TEST_F(Tester, test_reverser)
     Times(1);
     EXPECT_CALL(*interrupter_mock, Stop()).
     Times(1);
+    EXPECT_CALL(*interrupter_mock, Wait()).
+    Times(1);
     EXPECT_CALL(*writer_mock, Start()).
     Times(1);
     EXPECT_CALL(*writer_mock, Stop()).
@@ -55,9 +57,6 @@ TEST_F(Tester, test_reverser)
     "! 01.01.2000.\n"
     );
     
-    runner->OnReady(
-        [this]{cv.notify_one();}
-    );
 
     auto result = std::async([runner]{runner->Run();});
 }

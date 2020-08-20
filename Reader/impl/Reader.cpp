@@ -1,4 +1,5 @@
 #include "Reader.hpp"
+#include "Models/Actions/Tokenizer/impl/Tokenizer.hpp"
 #include "Utilities/Exceptions/Exceptions.hpp"
 
 #include <fstream>
@@ -10,7 +11,7 @@
 namespace reverser
 {
 
-    ReaderImpl::ReaderImpl() : isRun(false) {}
+    ReaderImpl::ReaderImpl() : isRun(false), Reader(std::make_shared<TokenizerImpl>()) {}
 
     void ReaderImpl::Start() const 
     {
@@ -38,7 +39,7 @@ namespace reverser
             descriptorIsActive = select(1, &descriptors, NULL, NULL, &kTimeout);
             if (!descriptorIsActive)
                 break;
-            if (!token.AddToBuffer(new_symbol = getchar()))
+            if (!tokenizer->AddToBuffer(new_symbol = getchar(),token))
                 break;
         }
         if (descriptorIsActive < 0)

@@ -21,22 +21,17 @@ TEST_F(Tester, test_interrupter)
 
     EXPECT_CALL(*token_processor_mock, Start()).
     Times(1);
-    EXPECT_CALL(*token_processor_mock, Stop()).
-    Times(1);
     EXPECT_CALL(*token_processor_mock, Wait()).
     Times(1);
     
 
-    runner->OnReady(
-        [this]{
-            std::raise(SIGINT);
-        }
-    );
-
     auto result = std::async([runner]{runner->Run();});
+    std::this_thread::sleep_for(0.4s);
+    
+    std::raise(SIGINT);
     {
-        std::unique_lock<std::mutex> lk(mutex);
-        cv.wait(lk, [runner]{return bool(*runner);});
+         std::unique_lock<std::mutex> lk(mutex);
+         cv.wait_for(lk ,0.5s, [delegator_active]{return delegator_active;});
     }
 
     EXPECT_EQ(delegator_active, true);

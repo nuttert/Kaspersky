@@ -25,7 +25,8 @@ namespace reverser
     Token ReaderImpl::ReadToken() const
     {
         static const auto STDIN = 0;
-        static timeval kTimeout = {0, 100};
+        static timeval kTimeout{5,0};
+ 
         int new_symbol;
         int descriptorIsActive;
 
@@ -37,10 +38,10 @@ namespace reverser
         while (isRun)
         {
             descriptorIsActive = select(1, &descriptors, NULL, NULL, &kTimeout);
-            if (!descriptorIsActive)
-                break;
-            if (!tokenizer->AddToBuffer(new_symbol = getchar(),token))
-                break;
+
+            if (descriptorIsActive ==  0) continue;
+            if (descriptorIsActive <  0) break;
+            if (!tokenizer->AddToBuffer(new_symbol = getchar(),token)) break;
         }
         if (descriptorIsActive < 0)
             throw exceptions::DescriptorException("Input file descriptor error!");

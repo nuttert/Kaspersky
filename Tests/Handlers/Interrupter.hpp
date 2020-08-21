@@ -21,8 +21,6 @@ TEST_F(Tester, test_interrupter)
 
     EXPECT_CALL(*token_processor_mock, Start()).
     Times(1);
-    EXPECT_CALL(*token_processor_mock, Stop()).
-    Times(1);
     EXPECT_CALL(*token_processor_mock, Wait()).
     Times(1);
     

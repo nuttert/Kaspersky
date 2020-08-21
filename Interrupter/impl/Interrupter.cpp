@@ -37,8 +37,21 @@ namespace reverser
             return;
         isRun = true;
         std::signal(SIGINT, SignalHandler);
-        CreateRunner();
+
+        auto result = std::async([this]{
+            {
+                std::mutex mutex;
+                std::unique_lock<std::mutex> lk(mutex);
+                cv.wait(lk, [this]{return !isRun || signal;});
+            }
+            if(signal){
+                signal = false;
+                delegator();
+            }
+        });
+        runners.push_back(std::move(result)); 
     }
+
     void InterrupterImpl::Stop() const
     {
         if (!isRun)
@@ -74,7 +87,7 @@ namespace reverser
     void InterrupterImpl::SignalHandlerImpl(int signal) const
     {
         std::cout << std::endl
-                << "Interrupt" << std::endl;
+                  << "Interrupt" << std::endl;
         this->signal = true;
         cv.notify_all();
     }

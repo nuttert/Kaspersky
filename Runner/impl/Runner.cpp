@@ -18,21 +18,21 @@ namespace reverser
                 if (isRun)
                         std::runtime_error("Runner already started!");
                 isRun = true;
-               
-                interrupter->Start();
-                processor->Start();
+                auto result = std::async([this] {
+                        interrupter->Start();
+                        processor->Start();
 
-                processor->Wait();
-                interrupter->Wait();
+                        interrupter->Wait();
+                        processor->Wait();
+                });
+                result.wait();
 
                 isRun = false;
-                processor->Stop();
                 interrupter->Stop();
         }
 
         void RunnerImpl::SignalDelegator()
         {
                 processor->Stop();
-                interrupter->Stop();
         }
 } // namespace reverser
